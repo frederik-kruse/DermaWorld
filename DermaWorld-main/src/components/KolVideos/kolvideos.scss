@@ -1,0 +1,113 @@
+@import "../../Variables/variables.scss";
+
+.kolVideos_area {
+  width: 100%;
+  height: auto;
+  background-color: $light-grey;
+  padding-top: 5vh;
+
+  .KolVideos_size {
+    width: 96%;
+    height: auto;
+    padding: 5vh 0vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+    .KolVideos_heading {
+      color: $spruce-primary;
+      margin: 1vh 0vh;
+    }
+    .kolVideos_breadText {
+      font-size: 100%;
+    }
+    .KolVideos_text {
+      text-align: left;
+      width: 90%;
+      height: auto;
+    }
+    .VideoBox_flex {
+      width: 90%;
+      height: auto;
+      margin: auto auto 5vh auto;
+      display: flex;
+      justify-content: center;
+      align-content: space-between;
+      flex-wrap: wrap;
+
+      .VideoBox {
+        max-width: 75vh;
+        height: 20vh;
+        margin: 2vh 0vh 0vh 0vh;
+        display: flex;
+      }
+    }
+  }
+}
+.VideoBox_Button {
+  width: 30vw;
+  height: 100%;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Video_text {
+  margin: 0vh 2vh;
+  width: 40vh;
+
+  .Video_title {
+    color: $spruce-primary;
+    margin-bottom: 1vh;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $bright-plum-hover;
+    }
+  }
+}
+
+//Color of play button
+.Circle {
+  fill: $bright-plum-secondary;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    fill: $bright-plum-hover;
+  }
+}
+
+//Responsive ----------------------
+@media screen and (max-width: 1326px) {
+  .kolVideos_area {
+    padding-top: 0vh;
+
+    .KolVideos_size {
+      width: 100%;
+      padding: 0vh;
+    }
+    .VideoBox_flex {
+      width: 10%;
+      height: 10%;
+
+      .VideoBox {
+        max-width: 100%;
+        height: 100%;
+
+        .VideoBox_Button {
+          width: 45%;
+          height: 55%;
+        }
+      }
+    }
+  }
+  .Video_text {
+    width: 70%;
+    margin: 0vh 2vh;
+  }
+}

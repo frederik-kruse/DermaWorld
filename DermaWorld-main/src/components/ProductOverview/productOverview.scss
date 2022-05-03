@@ -1,0 +1,73 @@
+@import "../../Variables/variables.scss";
+
+.ProductOverview_area {
+  width: 100%;
+  height: auto;
+  background-color: $light-grey;
+  padding: 8vh 0vh;
+}
+
+.ProductOverview_flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .ProductOverview_img {
+    width: 20vw;
+    height: auto;
+  }
+
+  .ProductOverview_text {
+    width: 26vw;
+    height: auto;
+    line-height: 2.8vh;
+    letter-spacing: 0.1vh;
+
+    .ProductOverview_heading {
+      margin: 2vh 0vh;
+      font-size: 2vh;
+      color: $spruce-primary;
+    }
+
+    .ProductOverview_breadText {
+      width: 80%;
+      font-size: 1.2vh;
+    }
+  }
+}
+
+@media screen and (max-width: 1502px) {
+  .ProductOverview_flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .ProductOverview_img {
+      width: 26vw;
+    }
+
+    .ProductOverview_text {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ProductOverview_area {
+    padding: 0vh 0vh;
+  }
+
+  .ProductOverview_flex {
+    width: 90%;
+
+    .ProductOverview_img {
+      width: 30vw;
+    }
+
+    .ProductOverview_text {
+      width: 90%;
+    }
+  }
+}

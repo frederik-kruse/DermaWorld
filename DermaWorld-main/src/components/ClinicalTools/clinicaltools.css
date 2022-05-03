@@ -1,0 +1,62 @@
+.ClinicalTools_area {
+  width: 100%;
+  height: auto;
+  padding: 10vh 0vh;
+}
+
+.ClinicalTools_colunm {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: auto;
+}
+.ClinicalTools_colunm .ClinicalTools_heading {
+  font-size: 2.5vh;
+  margin: 2vh;
+  color: #00609c;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex {
+  display: flex;
+  align-content: space-between;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box {
+  width: 80vh;
+  height: auto;
+  margin: 0vh 2vh;
+  background-color: #eeeeee;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box .ClinicalTools_img {
+  width: 100%;
+  height: auto;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box .ClinicalTools_text {
+  margin: 2.5vh;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box .ClinicalTools_text .ClinicalTools_secondaryHeading {
+  color: #00609c;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box .ClinicalTools_text .ClinicalTools_breadText {
+  margin: 1.5vh 0vh;
+}
+.ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box .ClinicalTools_text .ClinicalTools_link {
+  color: #c017a2;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1326px) {
+  .ClinicalTools_colunm {
+    width: 90%;
+  }
+  .ClinicalTools_colunm .ClinicalTools_boxFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ClinicalTools_colunm .ClinicalTools_boxFlex .ClinicalTools_box {
+    width: 60%;
+    margin: 1.5vh 0vh;
+  }
+}

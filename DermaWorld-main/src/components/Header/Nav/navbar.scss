@@ -1,0 +1,64 @@
+@import "../../../Variables/variables.scss";
+
+//Menu with all dropdowns for the first sub
+#menu {
+  max-width: 100%;
+  height: auto;
+  background-color: $white;
+}
+
+#menu:before,
+#menu:after {
+  content: "";
+  display: table;
+}
+
+#menu a {
+  float: left;
+  padding: 12px 2vh;
+  text-decoration: none;
+  color: $white;
+  left: 0;
+  max-width: 100%;
+}
+
+// Hold the hover with color and underline on only first sub
+#menu li:hover > a {
+  color: $spruce-primary;
+  background-color: $accent;
+  text-decoration: underline;
+}
+
+// First sub position // With visibility hidden
+#menu ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 190px;
+  z-index: 10;
+  background-color: $accent;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+//Make second sub visible when hovering on the first, by using >  plus visibility
+#menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+//Position of second sub
+#menu ul ul {
+  top: 40px;
+  display: flex;
+  left: 0;
+  background-color: $spruce-primary;
+}
+
+//Color change on both sub's/hover
+#menu ul a:hover {
+  background-color: $spruce-primary;
+  color: $white;
+}
